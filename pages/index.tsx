@@ -1,7 +1,8 @@
 export default function Home() {
   return (
     <div className="bg-slate-400 py-20 px-5 grid gap-10 min-h-screen">
-      <div className="bg-white p-10 rounded-3xl shadow-xl">
+      {/* Select Item */}
+      <div className="bg-white sm:hover:bg-red-400 md:bg-teal-400 lg:bg-indigo-400 xl:bg-yellow-400 p-10 rounded-3xl shadow-xl">
         <span className="font-semibold text-3xl">Select Item</span>
         {/* <div className="flex justify-between my-2">
           <span className="text-gray-500">Grey Chair</span>
@@ -39,7 +40,7 @@ export default function Home() {
           Checkout
         </button>
       </div>
-
+      {/* Profile */}
       <div className="bg-white overflow-hidden rounded-3xl shadow-xl group">
         <div className="bg-blue-500 p-6 pb-14">
           <span className="text-white text-2xl">Profile</span>
@@ -63,7 +64,7 @@ export default function Home() {
         </div>
 
         </div>
-        
+        {/* Stuff  */}
       <div className="bg-white p-6 rounded-3xl shadow-xl">
         <div className="flex mb-5 justify-between items-center">
           <span>⬅</span>
@@ -94,9 +95,6 @@ export default function Home() {
           </div>
         </div>
       </div>
-
-      <div className="bg-white p-10 rounded-3xl shadow-xl"></div>
-
       {/* modifiers for Forms */}
       <div className="bg-white p-10 rounded-3xl shadow-xl">
         <form className="flex flex-col space-y-2 p-5">
