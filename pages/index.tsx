@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="bg-slate-400 py-20 px-5 grid gap-10">
+    <div className="bg-slate-400 py-20 px-5 grid gap-10 min-h-screen">
       <div className="bg-white p-10 rounded-3xl shadow-xl">
         <span className="font-semibold text-3xl">Select Item</span>
         <div className="flex justify-between my-2">
@@ -15,7 +15,15 @@ export default function Home() {
           <span>Total</span>
           <span className="font-semibold">$99</span>
         </div>
-        <div className="mt-5 bg-blue-500 text-white p-3 text-center rounded-xl w-2/4 mx-auto">Checkout</div>
+        <button 
+        className="mt-5 bg-blue-500 text-white p-3 
+        text-center rounded-xl w-2/4 mx-auto
+        hover:bg-teal-400 hover:text-black
+        active:bg-yellow-500 
+        focus:text-red-500
+        ">
+          Checkout
+        </button>
       </div>
 
       <div className="bg-white overflow-hidden rounded-3xl shadow-xl">
@@ -28,7 +36,7 @@ export default function Home() {
               <span className="text-sm text-gray-500">Orders</span>
               <span className="font-medium">340</span>
             </div>
-            <div className="h-24 w-24 bg-red-400 rounded-full"/>
+            <div className="h-24 w-24 bg-gray-300 rounded-full"/>
             <div className="flex flex-col items-center">
               <span className="text-sm text-gray-500">Spent</span>
               <span className="font-medium">$2,310</span>
@@ -55,10 +63,10 @@ export default function Home() {
           <span className="font-medium text-xl">Swoon Lounge</span>
           <span className="text-ms text-gray-500">chair</span>
           <div className="mt-3 mb-5 flex justify-between items-center">
-            <div>
-              <input type="radio" />
-              <input type="radio" />
-              <input type="radio" />
+            <div className="space-x-2">
+              <button className="w-5 h-5 rounded-full bg-yellow-500"></button>
+              <button className="w-5 h-5 rounded-full bg-indigo-500"></button>
+              <button className="w-5 h-5 rounded-full bg-teal-500"></button>
             </div>
             <div className="flex items-center space-x-5">
               <button className="rounded-lg bg-blue-200 flex justify-center items-center aspect-square w-8 text-xl text-gray-500">-</button>
