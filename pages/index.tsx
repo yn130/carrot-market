@@ -42,7 +42,7 @@ export default function Home() {
       </div>
       {/* Profile */}
       <div className="bg-white overflow-hidden rounded-3xl shadow-xl group">
-        <div className="bg-blue-500 p-6 pb-14">
+        <div className="bg-blue-500 p-6 pb-14 portrait:bg-indigo-300 landscape:bg-pink-400">
           <span className="text-white text-2xl">Profile</span>
         </div>
         <div className="rounded-3xl p-6 bg-white relative -top-5">
