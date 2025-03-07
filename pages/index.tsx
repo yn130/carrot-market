@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="bg-slate-400 py-20 px-5 grid gap-10 min-h-screen">
+    <div className="bg-slate-400 xl:place-content-center py-20 px-5 grid gap-10 lg:grid-cols-2  xl:grid-cols-3 min-h-screen">
       {/* Select Item */}
       <div className="bg-white sm:hover:bg-red-400 md:bg-teal-400 lg:bg-indigo-400 xl:bg-yellow-400 p-10 rounded-3xl shadow-xl">
         <span className="font-semibold text-3xl">Select Item</span>
@@ -65,7 +65,7 @@ export default function Home() {
 
         </div>
         {/* Stuff  */}
-      <div className="bg-white p-6 rounded-3xl shadow-xl">
+      <div className="bg-white p-6 rounded-3xl shadow-xl ">
         <div className="flex mb-5 justify-between items-center">
           <span>⬅</span>
           <div className="space-x-3">
@@ -96,7 +96,7 @@ export default function Home() {
         </div>
       </div>
       {/* modifiers for Forms */}
-      <div className="bg-white p-10 rounded-3xl shadow-xl">
+      <div className="bg-white p-10 rounded-3xl shadow-xl lg:col-span-3 xl:col-span-1">
         <form className="flex flex-col space-y-2 p-5">
           <input type="text"
             required
